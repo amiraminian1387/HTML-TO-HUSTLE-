@@ -1,0 +1,380 @@
+    /* common  */
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+
+
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(white, rgb(158, 158, 250));
+
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* common  */
+
+    /* header   */
+    header {
+        height: 76px;
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 36px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #121212;
+    }
+
+    nav>img {
+        vertical-align: middle;
+        height: 22px;
+        width: 90px;
+    }
+
+    div#svg {
+        display: flex;
+        gap: 17px;
+
+
+    }
+
+    nav a {
+        padding: 6px 14px;
+        transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+        background: linear-gradient(90deg, #121212, #555);
+        color: white;
+        transform: scale(1.05);
+    }
+
+    /* end header  */
+
+    /*section backgroundIMG1  */
+    #background-image-top {
+        background-image: url(./img/background.png);
+        background-size: cover;
+        background-position: center;
+        height: 616px;
+        width: 100%;
+    }
+
+    .box {
+        width: 464px;
+        height: 311px;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(16px) saturate(140%);
+        -webkit-backdrop-filter: blur(16px) saturate(140%);
+        border: 1px solid rgba(255, 255, 255, .35);
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+        color: #fff;
+
+    }
+
+    div.box-caption {
+        text-align: center;
+        font-weight: 400;
+    }
+
+    div.caption h1,
+        .caption p {
+            margin: 0;
+        }
+
+    div.box-caption h2,
+        .box-caption h3 {
+            margin-top: 36px;
+        }
+
+
+
+    .cta-btn {
+        margin-top: 10px;
+        border: 1px solid rgba(255, 255, 255, .6);
+        background: rgba(255, 255, 255, .2);
+        color: #fff;
+        border-radius: 12px;
+        padding: 10px 18px;
+        transition: all 0.3s ease;
+    }
+
+    .cta-btn:hover {
+        background: #fff;
+        color: #121212;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .section-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* background image 1 */
+
+    /*start section adverties  */
+    section#section-adverties {
+        text-align: center;
+    }
+
+    section#section-adverties h1 {
+        font-weight: 400;
+        font-size: 40px;
+
+    }
+
+    section#section-adverties p {
+        letter-spacing: 0.4px;
+        padding: 10px;
+        font-weight: lighter;
+        font-size: 16px;
+        color: #121212;
+    }
+
+    /*end section adverties  */
+
+    /*start section card  */
+    #sectionCard {
+        display: flex;
+        gap: 64px;
+        overflow-x: auto;
+        /* چون اسکرول وسط صفحه ظاهر زشتی داشت اینارو خودم سرچ کردم یاد گرفتم */
+        scrollbar-width: none;
+        /* برای Firefox */
+        -ms-overflow-style: none;
+        /* برای IE و Edge  */
+
+    }
+
+    .card {
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
+    .card img {
+        transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+        transform: scale(1.08);
+    }
+
+
+    /* و برای Chrome */
+    #sectionCard::-webkit-scrollbar {
+        display: none;
+    }
+
+    figure img {
+        width: 261px;
+        height: 272px;
+
+
+    }
+
+    figcaption {
+        font-weight: 100;
+        font-size: 10px;
+    }
+
+    figcaption>span {
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    .discount {
+        display: inline;
+        text-decoration: line-through;
+        color: dimgray;
+        max-width: fit-content;
+    }
+
+    /* end cart  */
+
+    /* start images  */
+    .container {
+        display: flex;
+        gap: 6px;
+        width: 94%;
+        margin: 64px auto;
+        height: 700px;
+    }
+
+    .left h1 {
+        margin: 0;
+
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left .pic {
+        flex: 1;
+    }
+
+    .left .caption {
+
+        position: static;
+        text-align: left;
+        color: #333;
+    }
+
+    div.caption h1,
+    p {
+        margin: 0;
+    }
+
+
+
+    .left,
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .right .pic:first-child {
+        flex: 0.4;
+    }
+
+    .right .pic:last-child {
+        flex: 0.6;
+
+    }
+
+    .right h1,
+        .right p {
+            color: black;
+        }
+
+
+
+    .pic {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: 0.4s ease;
+    }
+
+   
+    .pic .caption {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #fff;
+        font-size: 14px;
+        opacity: 0.8;
+        transition: 0.3s ease;
+    }
+    
+    .pic:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+
+    .pic:hover .caption {
+        opacity: 1;
+        transform: translateY(-4px);
+    }
+
+
+    /* end section iamges  */
+
+    /* .section-BackgroundIMG2  */
+    #background-image-bottom {
+        background-image: url(./img/background2.png);
+        background-size: cover;
+        background-position: center;
+        height: 742px;
+        margin: 0 auto;
+        width: 94%;
+    }
+
+    /* footer  */
+
+
+    footer {
+        padding: 40px 0;
+
+    }
+
+    .footer-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .footer-col h3 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #121212;
+        margin-bottom: 16px;
+    }
+
+    .footer-col h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #121212;
+    }
+
+    .footer-col ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-col ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-col ul li a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(18, 18, 18, 0.75);
+        transition: color 0.2s ease-in-out;
+    }
+
+    .footer-col ul li a:hover {
+        color: #000;
+    }
+
+    /* footer  */
