@@ -1,0 +1,278 @@
+        /* common */
+        @font-face {
+            font-family: 'Yekan';
+            src: url('./fonts/yekan.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Yekan', Tahoma, Arial, sans-serif;
+            background: rgb(224, 192, 255);
+            color: rgb(132, 0, 255);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+        }
+
+        /* header */
+        header {
+            height: 100px;
+            margin: 0 auto;
+            background: rgb(75, 75, 207);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid rgb(4, 4, 97);
+            border-bottom-right-radius: 17px;
+            border-bottom-left-radius: 17px;
+
+        }
+
+        header #logo>img {
+            width: 110px;
+            height: max-content;
+            border: 3px solid rgb(4, 4, 97);
+            border-radius: 50%;
+            margin-right: 10px;
+
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        #logo span {
+            color: rgb(255, 255, 255);
+            font-size: x-large;
+            font-weight: bolder;
+
+        }
+
+        header #nav {
+            margin-left: 15px;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* header */
+
+        /* welcome section  */
+        section#welcome {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1%;
+        }
+
+        #welcome p {
+            text-align: center;
+            border: 1px solid blue;
+            border-radius: 7px;
+            padding: 1%;
+            background-color: #2563eb;
+            color: #fff;
+            width: max-content;
+            font-weight: lighter;
+        }
+
+        /* welcome section */
+
+        /* TAB section  */
+        section.tabs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+
+        }
+
+        section.tabs button {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            background-color: #dbeafe;
+            color: #222;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.9s, color 0.9s, transform 0.7s;
+        }
+
+        section.tabs button:hover {
+            background-color: inherit;
+            color: blueviolet;
+            transform: scale(1.08);
+        }
+
+        section.tabs button.active {
+            background-color: black;
+            color: #fff;
+            font-weight: bolder;
+        }
+
+        section.tabs button.active:hover {
+            background-color: blueviolet;
+            color: rgb(0, 0, 0);
+        }
+
+        /* tap section */
+
+        /* start card */
+        section.cards {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        figure.card {
+            background: #fff;
+            box-shadow: 0 2px 8px rgb(46, 112, 255);
+            border-radius: 18px;
+            min-height: 140px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        figcaption.card-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+
+        figure.card:hover {
+            box-shadow: 0 4px 16px blueviolet;
+            transform: translateY(-4px) scale(1.03);
+        }
+
+        figure.card img {
+            margin: 9px 5px 0 0;
+            width: 110px;
+            height: 120px;
+            border-radius: 45%;
+            border: 1px solid #eee;
+        }
+
+        figcaption.card-content h1 {
+
+            font-size: 20px;
+            font-weight: bold;
+            align-items: start;
+            margin: 0;
+        }
+
+        h1>span {
+            color: violet;
+            font-size: 17px;
+            font-weight: bold;
+            padding-right: 5px;
+        }
+
+        figcaption.card-content p {
+            margin: 3px 0;
+            color: dimgray;
+        }
+
+        figcaption.card-content h2 {
+            max-width: fit-content;
+            font-size: 17px;
+            color: blue;
+            border: 2px ridge rgb(150, 0, 150);
+            border-radius: 10px;
+            padding: 5px;
+            margin: 0;
+        }
+
+        .unavailable {
+            color: dimgray;
+
+
+        }
+
+        figcaption span#not-available {
+            color: red;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+            border: 1px solid white;
+            color: dimgray;
+            border: 1px solid dimgray;
+        }
+
+        h2.discount {
+
+            color: red;
+            width: max-content;
+            text-decoration: underline;
+            font-weight: bolder;
+            margin: 7px 0px;
+            font-size: 17px;
+            color: #c50395;
+            border: 1px ridge;
+        }
+
+        #offer {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #offer p {
+            color: rgb(80, 2, 153);
+            text-align: center;
+            max-width: 300px;
+        }
+
+        /* footer  */
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: #fff;
+            border-top: 1px solid violet;
+            padding: 10px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer span {
+            font-size: 14px;
+            font-weight: bolder;
+            color: blue;
+        }
+
+        footer button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 7px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        footer button:hover {
+            background: violet;
+            transform: scale(1.10);
+        }
+        /* footer  */
