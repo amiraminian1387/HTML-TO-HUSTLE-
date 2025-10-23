@@ -1,0 +1,283 @@
+
+        /* common */
+
+        @font-face {
+            font-family: 'Yekan';
+            src: url('./fonts/yekan.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Yekan', Tahoma, Arial, sans-serif;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+        }
+
+        /* common */
+
+        /* header  */
+
+        header {
+            background-color: rgb(0, 34, 84);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header #logo>img {
+            width: 100px;
+            padding: 8px 50px 5px 0px;
+
+        }
+
+        nav {
+            padding-left: 40px;
+            font-size: larger;
+
+        }
+
+        nav>a {
+            padding: 17px;
+            color: rgb(202, 214, 73);
+        }
+
+        nav>button {
+            border-color: rgb(202, 214, 73);
+            background-color: inherit;
+            color: rgb(202, 214, 73);
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #logo span {
+            font-size: large;
+            color: rgb(202, 214, 73);
+            padding-right: 10px;
+        }
+
+        nav>a,
+        nav>button {
+            transition: background 0.9s, color 0.9s, border-radius 0.9s;
+            border-radius: 6px;
+        }
+
+        nav>a:hover,
+        nav>button:hover {
+            background: rgb(202, 214, 73);
+            color: rgb(0, 34, 84);
+        }
+
+        nav>button {
+    transition: background 0.9s, color 0.9s, border-radius 0.9s;
+            border-radius: 6px;
+        }
+
+        nav>button:hover {
+            background: rgb(202, 214, 73);
+            color: rgb(0, 34, 84);
+        }
+
+        /* header  */
+
+        /* background-image-top */
+        #background-image-top {
+            background-image: url(./imgs/slide1.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+        }
+
+        /* background-image-top  */
+
+        /* welcome section */
+        .welcome-section {
+            padding-top: 10px;
+            text-align: center;
+
+        }
+
+        .welcome-section h1 {
+            font-size: xx-large;
+            margin-bottom: 15px;
+            font-weight: bolder;
+        }
+
+        .welcome-section .content {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .welcome-section .content div {
+
+            min-width: 280px;
+            max-width: 400px;
+        }
+
+        /* welcome section */
+
+        /* cta section */
+        #cta-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 40px 0 50px 0;
+            margin: 2% 0 2% 0;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(181, 26, 52, 0.15);
+            overflow: hidden;
+        }
+
+        #cta-content {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .cta-btn {
+            border: 2.5px solid rgb(202, 214, 73);
+            background: #b51a34;
+            color: #fff;
+            font-size: 1.3rem;
+            padding: 18px 48px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 16px 0 rgba(181, 26, 52, 0.10);
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            letter-spacing: 1px;
+        }
+
+        .cta-btn:hover {
+            background: #fff;
+            color: #b51a34;
+            box-shadow: 0 6px 24px 0 rgba(181, 26, 52, 0.18);
+        }
+
+        /* cta section */
+
+        /* h1 prfect-centering  */
+        h1.perfect-centering {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: bolder;
+            padding: 1%;
+            color: rgb(0, 34, 84);
+            background: #fff;
+            border-radius: 10px;
+            transition: box-shadow 0.3s, background 0.3s, color 0.3s;
+        }
+
+        h1.perfect-centering:hover {
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.18);
+            background: #ffcff7;
+            color: #c20020;
+        }
+
+        /* h1 perfect-centering  */
+
+        /* start card  */
+        #sectionCard {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            padding: 0;
+        }
+
+        #sectionCard figure {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            width: 31%;
+
+        }
+
+        #sectionCard figcaption {
+            background-color: #fff;
+            min-height: 120px;
+        }
+
+        /* کارت‌ها */
+        #sectionCard figcaption>h1 {
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sectionCard figcaption>p {
+            margin: 0% 5%;
+            text-align: center;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        #sectionCard img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin: 8px 24px 12px 24px;
+            padding: 6px 18px;
+            border: 2px solid #0a2cff;
+            border-radius: 5px;
+            color: rgb(202, 214, 73);
+            background: rgb(0, 34, 84);
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+
+        .read-more:hover {
+            background: #0a2cff;
+            color: #fff;
+        }
+
+        .card-simple-anim {
+            transition: box-shadow 0.5s, background-color 0.5s, transform 0.5s;
+        }
+
+        .card-simple-anim:hover {
+            box-shadow: 0 8px 32px 0 rgba(0, 34, 84, 0.18);
+            background-color: #ffe4b5;
+            transform: scale(1.045) translateY(-10px);
+        }
+
+        /* end card  */
+
+        /* ground-image-bottom */
+        #background-image-bottom {
+            background-image: url(./imgs/kooh.JPG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 200px;
+            width: 100%;
+            margin-top: 2.5%;
+        }
+
